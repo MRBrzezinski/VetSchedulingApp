@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Style the container */
+.container {
+	background-color: inherit;
+	overflow: hidden;
+}
+
+/* Style the appointment container */
+.appointment {
+	background-color: #9EF0F9;
+	overflow: hidden;
+	border: 2px solid black;
+}
+
+/* Style the buttons inside the container */
+.container button {
+	background-color: #9EF0F9;
+	float: left;
+	border: 2px solid black;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 20px;
+}
+
+.loginform input {
+	background-color: white;
+	float: center;
+	border: 2px solid black;
+	outline: none;
+	cursor: pointer;
+	padding: 10px 12px;
+	transition: 0.3s;
+	font-size: 14px;
+}
+
+.exit button {
+	background-color: #9EF0F9;
+	float: right;
+	border: 2px solid black;
+	outline: none;
+	cursor: pointer;
+	padding: 10px 12px;
+	transition: 0.3s;
+	font-size: 14px;
+}
+
