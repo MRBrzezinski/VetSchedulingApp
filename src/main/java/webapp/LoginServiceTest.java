@@ -15,11 +15,13 @@ import org.junit.jupiter.api.Test;
  */
 class LoginServiceTest {
 
+	private LoginService m_LoginService;
 	/**
 	 * @throws java.lang.Exception
 	 */
 	@BeforeEach
 	void setUp() throws Exception {
+		m_LoginService = new LoginService();
 	}
 
 	/**
@@ -34,7 +36,11 @@ class LoginServiceTest {
 	 */
 	@Test
 	void testValidateUser() {
-		fail("Not yet implemented");
+		if (m_LoginService == null)
+			fail("login service not created.");
+		
+		if (!m_LoginService.validateUser("GroupFour", "password"))
+			fail("could not validate default user.");
 	}
 
 }
